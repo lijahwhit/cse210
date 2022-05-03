@@ -22,7 +22,7 @@ def main():
 
     for i in range(10):
         make_board(board)
-        print("It's your turn," + turn + ". Move to which place?")
+        print("It's your turn, " + turn + ". Move to which place?")
 
         move = input()        
 
@@ -84,7 +84,7 @@ def main():
         else:
             turn = 'X'        
     
-    restart = input("Do want to play Again?(y/n)")
+    restart = input("Do want to play Again? (y/n)")
     if restart == "y" or restart == "Y":  
         for key in board_keys:
             board[key] = " "
